@@ -27,7 +27,7 @@ def check_password():
             st.error("😕 Password incorrect")
     return False
 
- if not check_password():
+if not check_password():
     st.stop()  # Stop execution if password is wrong
 
 # --- BACKEND CONFIGURATION ---
@@ -84,6 +84,7 @@ if st.button("Analyze Deal"):
             
         except Exception as e:
             st.error(f"An error occurred: {e}")
+
 
 
 
